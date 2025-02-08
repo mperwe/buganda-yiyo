@@ -1,16 +1,16 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import React from 'react';
 
 const About = () => {
   return (
-    <div>
-      <Navbar />
-      <div className="container mx-auto py-10">
-        <h2 className="text-3xl font-bold text-center">About Buganda YIYO</h2>
-        <p className="text-center mt-4 text-lg">We are a cultural youth group preserving Buganda’s heritage while promoting youth empowerment.</p>
-      </div>
-      <Footer />
-    </div>
+    <section className="py-20 text-center">
+      <h1 className="text-4xl font-semibold mb-6">About Buganda Youth</h1>
+      <p className="max-w-3xl mx-auto text-lg">
+        Buganda Youth is a cultural and social platform that brings together young people
+        from Buganda to share knowledge, celebrate their heritage, and engage in community-driven initiatives.
+        We aim to promote social change, unity, and empowerment through various activities, such as workshops,
+        cultural events, and leadership programs.
+      </p>
+    </section>
   );
 };
 
