@@ -6,8 +6,8 @@ export default function Navbar() {
     <nav className="bg-[white] text-blue p-5 flex justify-between items-center shadow-lg rounded-md">
       {/* Logo and Title */}
       <div className="flex items-center space-x-4">
-        <img src={logo} alt="Logo" className="h-12 w-12 object-contain" />
-        <h1 className="text-3xl font-semibold tracking-wide">BUGANDA YIYO  - BUGANDA YANGE</h1>
+        <img src={logo} alt="Logo" className="h-20 w-20 object-contain" />
+        <h1 className="text-3xl font-semibold tracking-wide">BUGANDA YIYO - YANGE</h1>
       </div>
       
       {/* Navigation Links */}
