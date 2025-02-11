@@ -1,18 +1,37 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react"; // Icons for mobile menu
-import logo from "../assets/logo.jpeg"; // Path to your logo file
+import { Menu, X } from "lucide-react";
+import logo from "../assets/logo.jpeg";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
-    <nav className="bg-white text-blue-900 p-5 shadow-lg rounded-md">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 bg-white shadow-lg transition-all duration-300 ${
+        scrolled ? "shadow-md" : "shadow-sm"
+      }`}
+    >
+      <div className="container mx-auto flex justify-between items-center p-5">
         {/* Logo & Title */}
         <div className="flex items-center space-x-4">
-          <img src={logo} alt="Logo" className="h-16 w-16 object-contain" />
-          <h1 className="text-2xl lg:text-3xl font-semibold tracking-wide">BUGANDA YIYO - YANGE</h1>
+          <Link to="/#hero" onClick={() => setMenuOpen(false)}>
+            <img src={logo} alt="Logo" className="h-16 w-16 object-contain" />
+          </Link>
+          <h1 className="text-2xl lg:text-3xl font-semibold tracking-wide">
+            <Link to="/#hero" className="hover:text-yellow-500 transition-all duration-200">
+              BUGANDA YIYO - YANGE
+            </Link>
+          </h1>
         </div>
 
         {/* Desktop Navigation */}
@@ -21,7 +40,7 @@ export default function Navbar() {
             <li key={index}>
               <Link
                 to={`/${item.toLowerCase()}`}
-                className="hover:text-yellow-500 transition-all duration-200 ease-in-out"
+                className="hover:text-yellow-500 transition-all duration-200"
               >
                 {item}
               </Link>
