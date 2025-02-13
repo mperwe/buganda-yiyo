@@ -29,6 +29,52 @@ const Home = () => {
     arrows: true,
   };
 
+  // Sample events data
+  const events = [
+    {
+      title: "Buganda Culture Festival",
+      date: "March 15, 2025",
+      location: "Kampala, Uganda",
+      description: "Join us for a celebration of Buganda's rich culture, featuring music, food, and traditional dance performances.",
+      img: bug1,
+    },
+    {
+      title: "Youth Empowerment Conference",
+      date: "April 10, 2025",
+      location: "Entebbe, Uganda",
+      description: "A conference to empower the youth of Buganda with skills, knowledge, and resources for personal and community development.",
+      img: bug4,
+    },
+    {
+      title: "Buganda Independence Day Celebration",
+      date: "October 9, 2025",
+      location: "Mengo, Uganda",
+      description: "A grand celebration of Buganda's independence with speeches, music, and community activities.",
+      img: bug5,
+    },
+    {
+      title: "Youth Cultural Expo",
+      date: "June 12, 2025",
+      location: "Mbale, Uganda",
+      description: "An expo to celebrate the cultural diversity within the Buganda community and to foster youth participation in preserving traditions.",
+      img: bug9,
+    },
+    {
+      title: "Buganda Sports Championship",
+      date: "August 22, 2025",
+      location: "Kampala, Uganda",
+      description: "A regional sports championship bringing together young athletes from all over Buganda for friendly competition and unity.",
+      img: bug7,
+    },
+    {
+      title: "Traditional Music and Dance Festival",
+      date: "December 14, 2025",
+      location: "Mengo, Uganda",
+      description: "A festival dedicated to traditional music and dance performances showcasing Buganda's vibrant artistic expressions.",
+      img: bug8,
+    },
+  ];
+
   return (
     <div className="bg-blue-50 min-h-screen">
       {/* Hero Section */}
@@ -66,9 +112,7 @@ const Home = () => {
       <section className="py-16 text-center">
         <h2 className="text-5xl md:text-6xl font-bold mb-10 text-gray-800">Upcoming Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
-          {[ 
-            // Event details here (same as before)
-          ].map((event, index) => (
+          {events.map((event, index) => (
             <div
               key={index}
               className="bg-white p-6 rounded-lg shadow-lg transform transition-all hover:scale-105 hover:shadow-2xl border-2 border-gray-300 hover:border-blue-500 duration-300"
@@ -76,13 +120,19 @@ const Home = () => {
               <img
                 src={event.img}
                 alt={event.title}
-                className="w-full h-56 object-cover rounded-lg mb-6 border-2 border-gray-200"
+                className="w-full h-64 object-cover rounded-lg mb-6 border-4 border-gray-300 transition-all duration-500 ease-in-out hover:scale-105"
               />
-              <h3 className="text-2xl font-semibold text-blue-700">{event.title}</h3>
-              <p className="text-sm text-gray-600 mt-2">
+              <h3 className="text-2xl font-semibold text-blue-700 mb-4">{event.title}</h3>
+              <p className="text-sm text-gray-600 mb-4">
                 📅 {event.date} | 📍 {event.location}
               </p>
-              <p className="mt-4 text-gray-700 text-lg">{event.description}</p>
+              <p className="text-lg text-gray-700 mb-4">{event.description}</p>
+              <Link
+                to="/events"
+                className="text-blue-500 hover:text-blue-700 font-semibold transition duration-200"
+              >
+                Read More
+              </Link>
             </div>
           ))}
         </div>
