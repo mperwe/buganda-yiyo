@@ -78,22 +78,22 @@ const Home = () => {
   return (
     <div className="bg-blue-50 min-h-screen">
       {/* Hero Section */}
-      <section className="relative w-full h-[75vh] pt-16">
+      <section className="relative w-11/12 mx-auto h-[80vh] pt-16">
         <Slider {...sliderSettings} className="absolute top-0 left-0 w-full h-full">
           {[Kabaka4, Kabaka3, bug10, bug1, bug4, bug5, bug9, bug7, bug8]
             .filter(Boolean) // Ensures no undefined values
             .map((image, index) => (
-              <div key={index} className="w-full h-[75vh] flex justify-center items-center relative">
+              <div key={index} className="w-full h-[80vh] flex justify-center items-center relative">
                 <img
                   src={image}
                   alt={`Slide ${index + 1}`}
-                  className="w-full h-full object-cover border-8 border-blue-900"  // Dark blue border
+                  className="w-full h-full object-cover border-1 border-blue-800"
                 />
-                <div className="absolute inset-0 bg-black/30 flex flex-col items-center justify-center text-white text-center">
-                  <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center">
+                  <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                     Tukwanirizza ku Buganda Yiyo Buganda Yange
                   </h1>
-                  <p className="mt-6 text-lg md:text-xl">
+                  <p className="mt-4 text-lg md:text-xl">
                     Empowering the youth of Buganda, celebrating our culture and heritage.
                   </p>
                   <Link
@@ -107,10 +107,18 @@ const Home = () => {
             ))}
         </Slider>
       </section>
+            {/* Button to link to Events page */}
+            <div className="text-center mt-20">
+          <Link
+          to="/events"
+          className="inline-block px-12 py-5 text-2xl font-semibold bg-blue-950 text-white rounded-lg hover:bg-yellow-900 transition-all duration-300"
+          >
+           Upcoming Events
+          </Link>
+        </div>
 
       {/* Upcoming Events Section */}
       <section className="py-16 text-center">
-        <h2 className="text-5xl md:text-6xl font-bold mb-10 text-gray-800">Upcoming Events</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
           {events.map((event, index) => (
             <div
@@ -145,7 +153,7 @@ const Home = () => {
           <img
             src={chairmanImage}
             alt="Chairman"
-            className="w-full md:w-[600px] h-[500px] object-contain rounded-xl shadow-2xl"
+            className="w-full md:w-[500px] h-[400px] object-contain rounded-xl shadow-2xl"
           />
           <div className="text-left">
             <p className="text-3xl font-light leading-snug">
