@@ -97,7 +97,7 @@ const Home = () => {
                     Empowering the youth of Buganda, celebrating our culture and heritage.
                   </p>
                   <Link
-                    to="/about"
+                    to="/#hero"
                     className="mt-6 inline-flex items-center gap-2 bg-yellow-500 text-black px-8 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-100 transition-all duration-300 shadow-lg"
                   >
                     Learn More <ChevronRight size={20} />
@@ -110,7 +110,7 @@ const Home = () => {
             {/* Button to link to Events page */}
             <div className="text-center mt-20">
           <Link
-          to="/events"
+          to="/#hero"
           className="inline-block px-12 py-5 text-2xl font-semibold bg-blue-950 text-white rounded-lg hover:bg-yellow-900 transition-all duration-300"
           >
            Upcoming Events
@@ -136,7 +136,7 @@ const Home = () => {
               </p>
               <p className="text-lg text-gray-700 mb-4">{event.description}</p>
               <Link
-                to="/events"
+                to="/#hero"
                 className="text-blue-500 hover:text-blue-700 font-semibold transition duration-200"
               >
                 Read More

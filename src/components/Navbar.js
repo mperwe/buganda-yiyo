@@ -25,38 +25,33 @@ export default function Navbar() {
         {/* Logo & Title */}
         <div className="flex items-center space-x-4">
           <Link to="/#hero" onClick={() => setMenuOpen(false)}>
-            <img src={logo} alt="Logo" className="h-16 w-16 object-contain" />
+            <img src={logo} alt="Logo" className="h-20 w-20 object-contain" />
           </Link>
-          <h1 className="text-2xl lg:text-3xl font-semibold tracking-wide text-gray-900">
+          <h1 className="text-2xl lg:text-3xl font-semibold tracking-wide underline decoration-black">
             <Link to="/#hero" className="hover:text-yellow-500 transition-all duration-200">
-              BUGANDA YIYO - YANGE
+              BUGANDA YANGE
             </Link>
           </h1>
         </div>
 
         {/* Desktop Navigation */}
-        <div className="hidden md:flex space-x-8 text-lg font-medium">
+        <ul className="hidden md:flex space-x-8 text-lg font-medium text-black">
           {["Home", "About", "Events", "Contact"].map((item, index) => (
             <li key={index}>
               <Link
-                to={`/${item.toLowerCase()}`}
-                className="text-gray-800 hover:text-yellow-500 transition-all duration-200"
+                to="/#hero"
+                className="hover:text-yellow-500 transition-all duration-200"
               >
                 {item}
               </Link>
             </li>
           ))}
-        </div>
+        </ul>
 
         {/* Register Button */}
-        <div className="hidden md:block">
-          <Link
-            to="/register"
-            className="text-white bg-yellow-500 hover:bg-yellow-600 px-4 py-2 rounded-md font-semibold transition duration-300"
-          >
-            Register
-          </Link>
-        </div>
+        <Link to="/register" className="hidden md:block bg-yellow-500 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-all">
+          Register
+        </Link>
 
         {/* Mobile Menu Icon */}
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
@@ -66,21 +61,19 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="md:hidden bg-white shadow-lg rounded-md absolute left-0 w-full mt-3 overflow-x-auto">
-          <ul className="flex space-x-6 p-4">
-            {["Home", "About", "Events", "Contact"].map((item, index) => (
-              <li key={index} className="flex-shrink-0">
-                <Link
-                  to={`/${item.toLowerCase()}`}
-                  className="block px-4 py-2 text-lg text-gray-800 hover:bg-yellow-500 hover:text-white transition-all duration-200"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
+        <ul className="md:hidden bg-white shadow-lg rounded-md absolute left-0 w-full mt-3 text-lg font-medium text-black">
+          {["Home", "About", "Events", "Contact", "Register"].map((item, index) => (
+            <li key={index} className="border-b last:border-none">
+              <Link
+                to={item === "Register" ? "/register" : "/#hero"}
+                className="block p-4 text-center hover:bg-yellow-500 hover:text-white transition-all"
+                onClick={() => setMenuOpen(false)}
+              >
+                {item}
+              </Link>
+            </li>
+          ))}
+        </ul>
       )}
     </nav>
   );
