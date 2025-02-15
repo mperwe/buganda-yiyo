@@ -36,16 +36,26 @@ export default function Navbar() {
 
         {/* Desktop Navigation */}
         <ul className="hidden md:flex space-x-8 text-lg font-medium text-black">
-          {["Home", "About", "Events", "Contact"].map((item, index) => (
-            <li key={index}>
-              <Link
-                to="/#hero"
-                className="hover:text-yellow-500 transition-all duration-200"
-              >
-                {item}
-              </Link>
-            </li>
-          ))}
+          <li>
+            <Link to="/#hero" className="hover:text-yellow-500 transition-all duration-200">
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link to="/about" className="hover:text-yellow-500 transition-all duration-200">
+              About
+            </Link>
+          </li>
+          <li>
+            <Link to="/event" className="hover:text-yellow-500 transition-all duration-200">
+              Events
+            </Link>
+          </li>
+          <li>
+            <Link to="/contact" className="hover:text-yellow-500 transition-all duration-200">
+              Contact
+            </Link>
+          </li>
         </ul>
 
         {/* Register Button */}
@@ -62,17 +72,51 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <ul className="md:hidden bg-white shadow-lg rounded-md absolute left-0 w-full mt-3 text-lg font-medium text-black">
-          {["Home", "About", "Events", "Contact", "Register"].map((item, index) => (
-            <li key={index} className="border-b last:border-none">
-              <Link
-                to={item === "Register" ? "/register" : "/#hero"}
-                className="block p-4 text-center hover:bg-yellow-500 hover:text-white transition-all"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item}
-              </Link>
-            </li>
-          ))}
+          <li className="border-b">
+            <Link
+              to="/#hero"
+              className="block p-4 text-center hover:bg-yellow-500 hover:text-white transition-all"
+              onClick={() => setMenuOpen(false)}
+            >
+              Home
+            </Link>
+          </li>
+          <li className="border-b">
+            <Link
+              to="/about"
+              className="block p-4 text-center hover:bg-yellow-500 hover:text-white transition-all"
+              onClick={() => setMenuOpen(false)}
+            >
+              About
+            </Link>
+          </li>
+          <li className="border-b">
+            <Link
+              to="/event"
+              className="block p-4 text-center hover:bg-yellow-500 hover:text-white transition-all"
+              onClick={() => setMenuOpen(false)}
+            >
+              Events
+            </Link>
+          </li>
+          <li className="border-b">
+            <Link
+              to="/contact"
+              className="block p-4 text-center hover:bg-yellow-500 hover:text-white transition-all"
+              onClick={() => setMenuOpen(false)}
+            >
+              Contact
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/register"
+              className="block p-4 text-center hover:bg-yellow-500 hover:text-white transition-all"
+              onClick={() => setMenuOpen(false)}
+            >
+              Register
+            </Link>
+          </li>
         </ul>
       )}
     </nav>

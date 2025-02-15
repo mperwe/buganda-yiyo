@@ -15,9 +15,9 @@ const About = () => {
 
       {/* Leadership Section */}
       <h2 className="text-3xl font-semibold mb-8 text-gray-800">Meet Our Leadership</h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 mb-12">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 mb-12">
         {/* Leadership Cards */}
-        {[
+        {[  
           { name: 'John Doe', position: 'Chairman', image: 'bug1.jpeg' },
           { name: 'Jane Smith', position: 'Treasurer', image: 'bug4.jpg' },
           { name: 'Paul Kato', position: 'Advisor', image: 'bug5.jpg' },
@@ -25,11 +25,11 @@ const About = () => {
           { name: 'James Akena', position: 'Member', image: 'bug7.jpg' },
           { name: 'Esther Tumusiime', position: 'Member', image: 'bug8.jpg' }
         ].map((leader, index) => (
-          <div key={index} className="text-center">
+          <div key={index} className="text-center bg-white p-4 shadow-lg rounded-lg">
             <img
               src={require(`../assets/${leader.image}`)}
               alt={leader.name}
-              className="w-32 h-32 rounded-full mx-auto mb-4 object-cover shadow-lg"
+              className="w-40 h-40 mx-auto mb-4 object-cover rounded-lg"
             />
             <h3 className="font-semibold text-xl text-gray-900">{leader.name}</h3>
             <p className="text-gray-500">{leader.position}</p>
@@ -39,7 +39,7 @@ const About = () => {
 
       {/* Messages Section */}
       <h2 className="text-3xl font-semibold mt-16 mb-8 text-gray-800">Messages from Our Leaders</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {/* Chairman's Message */}
         <div className="bg-white p-6 rounded-lg shadow-lg">
           <h3 className="font-semibold text-xl text-gray-800 mb-4">Chairman's Message</h3>
