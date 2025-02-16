@@ -29,7 +29,7 @@ export default function Navbar() {
           </Link>
           <h1 className="text-2xl lg:text-3xl font-semibold tracking-wide underline decoration-black">
             <Link to="/#hero" className="hover:text-yellow-500 transition-all duration-200">
-              BUGANDA YANGE
+            Buganda Yiyo Buganda Yange
             </Link>
           </h1>
         </div>
