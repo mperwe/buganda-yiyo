@@ -47,7 +47,7 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to="/event" className="hover:text-yellow-500 transition-all duration-200">
+            <Link to="/events" className="hover:text-yellow-500 transition-all duration-200">
               Events
             </Link>
           </li>
