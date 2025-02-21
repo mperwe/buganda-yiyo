@@ -1,21 +1,23 @@
 import React from 'react';
+import bg from "../assets/bg.jpg";
 
 const leaders = [
-  { name: 'John Doe', position: 'Chairman', image: 'bug1.jpeg' },
-  { name: 'Jane Smith', position: 'Treasurer', image: 'bug4.jpg' },
-  { name: 'Paul Kato', position: 'Advisor', image: 'bug5.jpg' },
-  { name: 'Sarah Nakato', position: 'Secretary', image: 'bug6.jpg' },
-  { name: 'James Akena', position: 'Member', image: 'bug7.jpg' },
-  { name: 'Emmanuel Nsubuga', position: 'Vice Chairman', image: 'bug8.jpg' },
-  { name: 'Mary Lwanga', position: 'Assistant Secretary', image: 'bug9.jpg' },
-  { name: 'Peter Kamya', position: 'Cultural Coordinator', image: 'bug10.jpg' },
-  { name: 'Angela Nabukenya', position: 'Youth Coordinator', image: 'bug11.jpg' },
-  { name: 'Abraham Mulondo', position: 'Public Relations Officer', image: 'bug12.jpg' },
-  { name: 'Ruth Namukasa', position: 'Events Coordinator', image: 'bug13.jpg' },
-  { name: 'Samson Tumusiime', position: 'Sports Director', image: 'bug14.jpg' },
-  { name: 'Tina Nsubuga', position: 'Gender Affairs Officer', image: 'bug15.jpg' },
-  { name: 'David Lwanga', position: 'Health Officer', image: 'bug16.jpg' },
-  { name: 'Julia Nalule', position: 'Education Officer', image: 'bug17.jpg' },
+  { name: 'Munaawa Dan', position: 'Ssentebe', image: 'Chairman.jpeg' },
+  { name: 'Nsubuga Najib', position: 'Mumyuka Ssentebe', image: 'Vice.jpeg' },
+  { name: 'Kulumba Dickson', position: 'Omukubiriza', image: 'speaker.jpeg' },
+  { name: 'Mirro Shafik', position: 'Muwandisi', image: 'secretary.jpeg' },
+  { name: 'Ssemakula Wycliffe', position: 'Akulira ebya Tekinologiya', image: 'ict.jpeg' },
+  { name: 'Namulwana H Victoria', position: 'Hospitality', image: 'hospitality.jpeg' },
+  { name: 'Ssentongo Micheal', position: 'Diaspora', image: 'bug9.jpg' },
+  { name: 'Gabriel C Buule', position: 'Mawulire', image: 'bug10.jpg' },
+  { name: 'Lunanika Sharif', position: 'Welfare', image: 'welfare.jpeg' },
+  { name: 'Namukangula Keith', position: 'Member', image: 'bug12.jpg' },
+  { name: 'Galiwango B Musota', position: 'Member', image: 'bug13.jpg' },
+  { name: 'Ndagire Christine', position: 'Omuwanika', image: 'treasurer.jpeg' },
+  { name: 'Twagala Ssekitooleko', position: 'Enkulakulana', image: 'bug15.jpg' },
+  { name: 'Simon Ssenkayi', position: 'Muwabuzi', image: 'advisor.jpeg' },
+  { name: 'Nalugwa Lilina', position: 'Amyuka owa Tekinologiya', image: 'ict2.jpeg' },
+  { name: 'Ssebunya Hamzah ', position: 'Member', image: 'hamza.jpeg' },
 ];
 
 const messages = [
@@ -29,11 +31,14 @@ const newKatikkiroImage = require('../assets/Katikkiro2.jpeg');
 
 const About = () => {
   return (
-    <section className="bg-cover bg-center py-16 px-6" style={{ backgroundImage: 'url(../assets/Kabaka.jpeg)' }}>
-      <div className="max-w-7xl mx-auto">
+    <section className="bg-cover bg-center py-16 px-6 relative" style={{ backgroundImage: `url(${bg})` }}>
+      <div className="absolute inset-0 bg-black opacity-30"></div> {/* Faded Overlay */}
+      <div className="max-w-7xl mx-auto relative">
         {/* About Title and Description */}
-        <h1 className="text-5xl font-extrabold text-center text-gray-900 mb-8">About Buganda Youth</h1>
-        <p className="max-w-3xl mx-auto text-lg text-gray-700 mb-12 text-center leading-relaxed">
+        <h1 className="text-5xl font-extrabold text-center text-white mb-8">
+          About Buganda Youth
+        </h1>
+        <p className="max-w-3xl mx-auto text-lg text-white mb-12 text-center leading-relaxed">
           Buganda Youth Association (BYA) is a cultural and social platform that unites young people from Buganda
           to share knowledge, celebrate their heritage, and engage in community-driven initiatives.
         </p>
@@ -44,7 +49,13 @@ const About = () => {
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
             {leaders.map((leader, index) => (
               <div key={index} className="bg-white shadow-lg rounded-lg text-center overflow-hidden transition-all transform hover:scale-105 hover:shadow-2xl">
-                <img src={require(`../assets/${leader.image}`)} alt={leader.name} className="w-full h-48 object-cover rounded-t-lg" />
+                <div className="w-36 h-36 mx-auto bg-gray-100 rounded-full overflow-hidden">
+                  <img 
+                    src={require(`../assets/${leader.image}`)} 
+                    alt={leader.name} 
+                    className="object-cover w-full h-full opacity-80 transition-opacity duration-300 ease-in-out hover:opacity-100" 
+                  />
+                </div>
                 <div className="p-6">
                   <h3 className="font-semibold text-xl text-gray-900 mb-2">{leader.name}</h3>
                   <p className="text-gray-500 text-sm">{leader.position}</p>
@@ -85,7 +96,6 @@ const About = () => {
 
         {/* New Katikkiro’s Message Section */}
         <section className="py-8 bg-gray-900 text-white text-center">
-         
           <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-8 p-12 bg-gray-800 rounded-xl shadow-xl border-4 border-white-500">
             <img src={newKatikkiroImage} alt="New Katikkiro" className="w-[150px] h-[150px] object-cover rounded-full shadow-2xl" />
             <div className="text-left">

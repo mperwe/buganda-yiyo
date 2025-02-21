@@ -27,7 +27,7 @@ export default function Navbar() {
           <Link to="/#hero" onClick={() => setMenuOpen(false)}>
             <img src={logo} alt="Logo" className="h-20 w-20 object-contain" />
           </Link>
-          <h1 className="text-2xl lg:text-3xl font-semibold tracking-wide underline decoration-black">
+          <h1 className="text-2xl lg:text-3xl font-semibold tracking-wide ">
             <Link to="/#hero" className="hover:text-yellow-500 transition-all duration-200">
             Buganda Yiyo Buganda Yange
             </Link>
@@ -58,10 +58,16 @@ export default function Navbar() {
           </li>
         </ul>
 
-        {/* Register Button */}
-        <Link to="/register" className="hidden md:block bg-yellow-500 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-all">
+      {/* Register Button */}
+        <a
+          href="https://docs.google.com/forms/d/1kJYYtbwk2QrnKqmLkeXnmwZ7bNgah6xXWkR1OToCcGA/edit#settings"
+          target="_blank"
+          rel="noopener noreferrer"
+        className="hidden md:block bg-yellow-500 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-all"
+      >
           Register
-        </Link>
+      </a>
+
 
         {/* Mobile Menu Icon */}
         <button className="md:hidden" onClick={() => setMenuOpen(!menuOpen)}>
