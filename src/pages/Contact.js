@@ -35,19 +35,19 @@ const Contact = () => {
         </p>
         
         <div className="flex justify-center gap-8 mb-8">
-          <a href="https://wa.me/yourwhatsapplink" target="_blank" className="text-white hover:text-green-500 transition duration-300">
+          <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noreferrer" className="text-white hover:text-green-500 transition duration-300">
             <i className="fab fa-whatsapp text-4xl"></i>
             <span className="block mt-2">WhatsApp</span>
           </a>
-          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" className="text-white hover:text-blue-500 transition duration-300">
+          <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer" className="text-white hover:text-blue-500 transition duration-300">
             <i className="fab fa-linkedin text-4xl"></i>
             <span className="block mt-2">LinkedIn</span>
           </a>
-          <a href="https://twitter.com/yourtwitter" target="_blank" className="text-white hover:text-blue-400 transition duration-300">
+          <a href="https://twitter.com/yourtwitter" target="_blank" rel="noreferrer" className="text-white hover:text-blue-400 transition duration-300">
             <i className="fab fa-twitter text-4xl"></i>
             <span className="block mt-2">Twitter</span>
           </a>
-          <a href="https://github.com/yourgithub" target="_blank" className="text-white hover:text-gray-500 transition duration-300">
+          <a href="https://github.com/yourgithub" target="_blank" rel="noreferrer" className="text-white hover:text-gray-500 transition duration-300">
             <i className="fab fa-github text-4xl"></i>
             <span className="block mt-2">GitHub</span>
           </a>
@@ -87,6 +87,7 @@ const Contact = () => {
           <a
             href="https://calendar.google.com/calendar/u/0/selfsched?sstoken=yourgooglemeetlink"
             target="_blank"
+            rel="noreferrer"
             className="text-blue-600 hover:text-blue-800 text-xl mt-4 block"
           >
             Schedule a Google Meet
