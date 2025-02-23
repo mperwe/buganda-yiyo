@@ -14,6 +14,7 @@ const Footer = () => {
             <li><Link to="/about" className="hover:text-[#FFA500] transition-colors">About Us</Link></li>
             <li><Link to="/events" className="hover:text-[#FFA500] transition-colors">Events</Link></li>
             <li><Link to="/contact" className="hover:text-[#FFA500] transition-colors">Contact</Link></li>
+            <li><Link to="/contact" className="hover:text-[#FFA500] transition-colors"> Lupapula Mututuma</Link></li>
           </ul>
         </div>
 

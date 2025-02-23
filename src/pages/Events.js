@@ -17,8 +17,19 @@ const events = [
   { id: 5, title: "Tech & Innovation Expo", date: "November 8, 2025", description: "Showcasing tech solutions for African development.", image: bug5 },
   { id: 6, title: "Business Networking Event", date: "December 20, 2025", description: "Connecting entrepreneurs for business growth.", image: bug6 },
   { id: 7, title: "Cultural Heritage Festival", date: "April 12, 2025", description: "Celebrating Buganda’s rich traditions and culture.", image: bug7 },
+  { id: 8, title: "Health & Wellness Fair", date: "May 30, 2025", description: "Promoting well-being through workshops and screenings.", image: bug8 },
+  { id: 5, title: "Tech & Innovation Expo", date: "November 8, 2025", description: "Showcasing tech solutions for African development.", image: bug5 },
+  { id: 6, title: "Business Networking Event", date: "December 20, 2025", description: "Connecting entrepreneurs for business growth.", image: bug6 },
+  { id: 7, title: "Cultural Heritage Festival", date: "April 12, 2025", description: "Celebrating Buganda’s rich traditions and culture.", image: bug7 },
+  { id: 8, title: "Health & Wellness Fair", date: "May 30, 2025", description: "Promoting well-being through workshops and screenings.", image: bug8 },
+  { id: 5, title: "Tech & Innovation Expo", date: "November 8, 2025", description: "Showcasing tech solutions for African development.", image: bug5 },
+  { id: 6, title: "Business Networking Event", date: "December 20, 2025", description: "Connecting entrepreneurs for business growth.", image: bug6 },
+  { id: 7, title: "Cultural Heritage Festival", date: "April 12, 2025", description: "Celebrating Buganda’s rich traditions and culture.", image: bug7 },
+  { id: 8, title: "Health & Wellness Fair", date: "May 30, 2025", description: "Promoting well-being through workshops and screenings.", image: bug8 },
+  { id: 7, title: "Cultural Heritage Festival", date: "April 12, 2025", description: "Celebrating Buganda’s rich traditions and culture.", image: bug7 },
   { id: 8, title: "Health & Wellness Fair", date: "May 30, 2025", description: "Promoting well-being through workshops and screenings.", image: bug8 }
 ];
+
 
 const Events = () => {
   return (
@@ -34,23 +45,30 @@ const Events = () => {
         </div>
       </nav>
 
+      {/* Events Section */}
       <section className="relative py-16 px-6 text-center bg-gray-100" id="events">
         <div className="absolute inset-0 bg-cover bg-center opacity-30" style={{ backgroundImage: `url(${bug9})` }}></div>
         <div className="relative z-10">
           <h1 className="text-4xl font-semibold mb-8 text-gray-800">Upcoming Events</h1>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {events.map((event) => (
-              <div key={event.id} className="bg-white p-4 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-                <img src={event.image} alt={event.title} className="w-full h-40 object-cover rounded-md" />
-                <h3 className="text-lg font-semibold mt-3">{event.title}</h3>
-                <p className="text-gray-600">{event.date}</p>
-                <p className="mt-2 text-sm">{event.description}</p>
+              <div key={event.id} className="bg-white p-4 rounded-lg shadow-lg flex items-center space-x-4 transition-transform transform hover:scale-105">
+                {/* Circular Image */}
+                <img src={event.image} alt={event.title} className="w-16 h-16 object-cover rounded-full" />
+                
+                {/* Event Info */}
+                <div className="text-left">
+                  <h3 className="text-lg font-semibold">{event.title}</h3>
+                  <p className="text-gray-600">{event.date}</p>
+                  <p className="mt-2 text-sm">{event.description}</p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
+      {/* Testimonials Section */}
       <section className="py-16 px-6 text-center bg-gray-100" id="testimonials">
         <h2 className="text-3xl font-semibold mb-6 text-gray-800">What People Are Saying</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -63,20 +81,8 @@ const Events = () => {
             <p className="font-semibold mt-4">- Jane Smith</p>
           </div>
           <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-            <p className="italic">"The cultural exchange expanded my perspective. I loved the experience!"</p>
-            <p className="font-semibold mt-4">- Jane Smith</p>
-          </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-            <p className="italic">"The cultural exchange expanded my perspective. I loved the experience!"</p>
-            <p className="font-semibold mt-4">- Jane Smith</p>
-          </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-            <p className="italic">"The cultural exchange expanded my perspective. I loved the experience!"</p>
-            <p className="font-semibold mt-4">- Jane Smith</p>
-          </div>
-          <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-            <p className="italic">"The cultural exchange expanded my perspective. I loved the experience!"</p>
-            <p className="font-semibold mt-4">- Jane Smith</p>
+            <p className="italic">"The Tech Expo introduced me to amazing innovations!"</p>
+            <p className="font-semibold mt-4">- Alex Mwangi</p>
           </div>
         </div>
       </section>
