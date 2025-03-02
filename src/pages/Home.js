@@ -13,6 +13,12 @@ import bug1 from "../assets/bug1.jpeg";
 import bug4 from "../assets/bug4.jpg";
 import bug5 from "../assets/bug5.jpg";
 import bug10 from "../assets/bug10.jpg";
+import by5 from "../assets/by5.jpeg";
+import by8 from "../assets/by8.jpeg";
+import by11 from "../assets/by11.jpeg";
+import by12 from "../assets/by12.jpeg";
+import by3 from "../assets/by3.jpeg";
+import by15 from "../assets/by15.jpeg";
 
 const Home = () => {
   const sliderSettings = {
@@ -29,10 +35,10 @@ const Home = () => {
   };
 
   const events = [
-    { title: "Buganda Culture Festival", date: "March 15, 2025", location: "Kampala", description: "A grand celebration of Buganda’s rich culture.", img: bug1 },
+    { title: "Buganda Culture Festival", date: "March 15, 2025", location: "Kampala", description: "A grand celebration of Buganda’s rich culture.", img: by15 },
     { title: "Youth Empowerment Conference", date: "April 10, 2025", location: "Entebbe", description: "Empowering Buganda’s youth with skills and knowledge.", img: bug4 },
-    { title: "Buganda Independence Day", date: "October 9, 2025", location: "Mengo", description: "Commemorating Buganda’s independence.", img: bug5 },
-    { title: "Royal Heritage Gathering", date: "June 20, 2025", location: "Mawokota", description: "An exclusive gathering honoring Buganda’s traditions.", img: bug10 },
+    { title: "Business Networking Event", date: "October 9, 2025", location: "Mengo", description: "Buganda’s  Business weeke.", img: by11 },
+    { title: "Royal Heritage Gathering", date: "June 20, 2025", location: "Mawokota", description: "An exclusive gathering honoring Buganda’s traditions.", img: by3 },
   ];
 
   return (
@@ -40,7 +46,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative w-full h-screen">
         <Slider {...sliderSettings} className="absolute top-0 left-0 w-full h-full">
-          {[flag, bg, Kabaka4, Kabaka3, bug10, bug1, bug4, bug5].map((image, index) => (
+          {[flag, bg, Kabaka4, Kabaka3, bug10, bug1, bug4, bug5, by5, by8, by11, by12].map((image, index) => (
             <div key={index} className="w-full h-screen flex justify-center items-center relative">
               <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-60 p-6">
@@ -48,7 +54,7 @@ const Home = () => {
                   Tukwanirizza ku Buganda Yiyo Buganda Yange
                 </h1>
                 <p className="mt-4 text-lg md:text-2xl font-light">
-                  Empowering the youth of Buganda, celebrating our culture.
+                Ffenna Wamu, Tusobola Okukuuma Buganda, Ensi Yaffe
                 </p>
                 <Link to="/about" className="mt-6 px-8 py-3 bg-yellow-500 text-black rounded-full text-lg md:text-xl font-semibold hover:bg-yellow-600 transition-all flex items-center justify-center space-x-2 transform hover:scale-105">
                   <span>Learn More</span>
@@ -80,12 +86,13 @@ const Home = () => {
 
       {/* Message from the King */}
       <section className="py-20 bg-gray-900 text-white text-center">
-        <h2 className="text-4xl font-extrabold mb-8">Obubaka bw'Omutanda</h2>
+        <h2 className="text-4xl font-extrabold mb-8">OBUBAKA BWA SSAABASAJJA KABAKA </h2>
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 p-6 bg-gray-800 rounded-xl shadow-lg border-4 border-white">
           <img src={chairmanImage} alt="Chairman" className="w-full md:w-[450px] h-[350px] object-cover rounded-lg shadow-2xl border-4 border-white" />
           <div className="text-left">
             <p className="text-lg md:text-xl font-light leading-relaxed">
-              "Together, we build a stronger Buganda. Our culture, history, and values define us. The youth hold the key to a brighter future. Let’s unite, innovate, and create opportunities for the next generation."
+            Enkozesa y'ebyo ebitubulirirwa mu bigambo ne mu mawulire, oba amagezi agatuwebwa ne Tekinologiya munsangi zinno byonna bikulu nnyo.  Kyokka tussaana okubikwata n'obwegendereza. Bwetubyeyambisa obulungi tusobola okufunamu enkulakulana, kyokka bwetubikozesa obubi bisobola okutuviirako obulabe n'okwenyika ffeka muddubi. 
+            Abalabe ba Buganda bangi beyambisiza nnyo emitimbagano okutyobola Ekitiibwa kya Buganda. Tufube nnyo obutabawa mwaganya kubanga waliwo ate abamu muffe ABAGANDA abaseesa mwebyo abalabe bye batambuza
             </p>
             <p className="mt-4 text-lg md:text-xl font-bold">Ssabasajja Kabaka Ronald Muwenda Mutebi II</p>
           </div>

@@ -52,7 +52,7 @@ const About = () => {
 
         {/* Background Section */}
         <div className="bg-white py-12 px-6 rounded-lg shadow-lg mb-16">
-          <h2 className="text-4xl font-semibold text-gray-800 text-center mb-8">Entandikwa | Background</h2>
+          <h2 className="text-4xl font-semibold text-gray-800 text-center mb-8">Background</h2>
           <p className="text-gray-700 text-lg leading-relaxed">
             Obuvunaanyizibwa bwava mu kiragiro Nnyinimu Ssaabasajja Kabaka, kye yawa bwe yali oyogerako mu lukuŋŋaana lwa Buganda Bumu North America Convention, olwaliwo nga 29 May 2021.
             Maasomoogi yalagira abantu ba Buganda naddala abavubuka okukozesa emitimbagano okusaabulula obulimba bw'abakozesa emitimbagano okunafuya Obwakabaka, nga batambuza amawulire ag'obulimba.
@@ -64,26 +64,72 @@ const About = () => {
         </div>
 
                 {/* Our Objectives Section */}
-        <div className="bg-white py-12 px-6 rounded-lg shadow-lg mb-16">
-          <h2 className="text-4xl font-semibold text-gray-800 text-center mb-8">Emiramwa | Objectives </h2>
+                <div className="bg-white py-12 px-6 rounded-lg shadow-lg mb-16">
+          <h2 className="text-4xl font-semibold text-gray-800 text-center mb-8">Our Objectives</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
-            {["Okumanyisa abantu ba Kabaka amawulire amatuufu okuva e mbuga nenteekateeka za Gavumenti ya Ssaabasajja Kabaka.",
-              "Abantu ba Kabaka bonna okumanya Ensonga Ssemasonga eza Buganda ettaano(5) wamu nokuzinnyonyoka olwokuzisomesa abalala",
-              "Okusoma olulimi lwaffe Oluganda, Ebyobuwangwa, Ennono, Obulombolombo n'Empisa zaffe.",
-              "Okuwuliriza ebisoomoza abantu ba Buganda eyo gye bawangaalira",
-              "Abantu ba Kabaka abakozesa emitimbagano okuwa ebirowoozo ku nteekateeka ezizza Buganda ku ntikko.",
-              "Okunyweza OBUMU mu bantu ba Ssaabasajja Kabaka abali ku mitimbagano.",
-              "Okukunga abantu ba Kabaka abakozesa emitimbagano okwenyigira obutereevu mu nteekateeka za gavumenti ya Kabaka ezigendererwa okuwagira eby'enfuna bya Buganda omuli OLUWALO, Kabaka Birthday Run, Masaza Cup n'enteekateeka endala.",
-             
-            ].map((objective, idx) => (
-              <div
-                key={idx}
-                className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl"
-              >
-                <h3 className="font-semibold text-xl text-gray-900 mb-4">{` ${idx + 1}`}</h3>
-                <p className="text-gray-600">{objective}</p>
-              </div>
-            ))}
+            {/* Objective 1 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 1</h3>
+              <p className="text-gray-600">
+                To promote the culture, language, and traditions of Buganda through social media platforms.
+              </p>
+            </div>
+            {/* Objective 2 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 2</h3>
+              <p className="text-gray-600">
+                To connect and unite people of Buganda descent worldwide to celebrate our shared heritage.
+              </p>
+            </div>
+            {/* Objective 3 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 3</h3>
+              <p className="text-gray-600">
+                To advocate for the preservation of Buganda's cultural landmarks and history.
+              </p>
+            </div>
+            {/* Objective 4 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 4</h3>
+              <p className="text-gray-600">
+                To organize events and programs that celebrate Buganda's rich cultural diversity.
+              </p>
+            </div>
+            {/* Objective 5 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 5</h3>
+              <p className="text-gray-600">
+                To empower youth and women from Buganda through educational programs and skills training.
+              </p>
+            </div>
+            {/* Objective 6 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 6</h3>
+              <p className="text-gray-600">
+                To encourage the preservation and promotion of traditional Buganda arts and crafts.
+              </p>
+            </div>
+            {/* Objective 7 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 7</h3>
+              <p className="text-gray-600">
+                To engage with government and local institutions for policies that benefit the Buganda community.
+              </p>
+            </div>
+            {/* Objective 8 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 8</h3>
+              <p className="text-gray-600">
+                To create platforms for Buganda's youth to showcase their talents and innovation.
+              </p>
+            </div>
+            {/* Objective 9 */}
+            <div className="bg-white p-6 rounded-lg shadow-md text-center transition-all transform hover:scale-105 hover:shadow-xl">
+              <h3 className="font-semibold text-xl text-gray-900 mb-4">Objective 9</h3>
+              <p className="text-gray-600">
+                To strengthen the unity and pride of Buganda people across the globe through mutual support.
+              </p>
+            </div>
           </div>
         </div>
 
@@ -91,7 +137,7 @@ const About = () => {
         
         {/* Leadership Section */}
         <div className="bg-white py-16 px-6 rounded-lg shadow-lg mb-16">
-          <h2 className="text-4xl font-semibold text-gray-800 text-center mb-12">Abakulembeze | Meet Our Leadership</h2>
+          <h2 className="text-4xl font-semibold text-gray-800 text-center mb-12">Meet Our Leadership</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
             {leaders.map((leader, index) => (
               <div
@@ -132,7 +178,7 @@ const About = () => {
 
         {/* Katikkiro’s Message Section */}
         <section className="py-8 bg-gray-900 text-white text-center">
-          <h2 className="text-5xl md:text-4xl font-extrabold mb-8">Obubaka bwa Katikkiro Charles Peter Mayiga </h2>
+          <h2 className="text-5xl md:text-6xl font-extrabold mb-8">Obubaka bwa Katikkiro Charles Peter Mayiga </h2>
           <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center gap-8 p-12 bg-gray-800 rounded-xl shadow-xl">
             <img src={chairmanImage} alt="Chairman" className="w-[150px] h-[150px] object-cover rounded-full shadow-2xl" />
             <div className="text-left">
