@@ -27,19 +27,19 @@ const Contact = () => {
         </p>
         
         <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <a href="https://wa.me/yourwhatsapplink" target="_blank" rel="noreferrer" className="px-6 py-3 bg-green-500 rounded-lg text-white text-lg font-semibold hover:bg-green-600 transition duration-300">
+          <a href="https://chat.whatsapp.com/CfdHJ5WHC3yHsmr5tkObsH" target="_blank" rel="noreferrer" className="px-6 py-3 bg-green-500 rounded-lg text-white text-lg font-semibold hover:bg-green-600 transition duration-300">
             WhatsApp
           </a>
           <a href="https://linkedin.com/in/yourlinkedin" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-700 rounded-lg text-white text-lg font-semibold hover:bg-blue-800 transition duration-300">
             LinkedIn
           </a>
-          <a href="https://twitter.com/yourtwitter" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-400 rounded-lg text-white text-lg font-semibold hover:bg-blue-500 transition duration-300">
+          <a href="https://twitter.com/i/communities/1855912401536713035" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-400 rounded-lg text-white text-lg font-semibold hover:bg-blue-500 transition duration-300">
             Twitter
           </a>
-          <a href="https://facebook.com/yourfacebook" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-600 rounded-lg text-white text-lg font-semibold hover:bg-blue-700 transition duration-300">
+          <a href="https://www.facebook.com/NyaffeBuganda" target="_blank" rel="noreferrer" className="px-6 py-3 bg-blue-600 rounded-lg text-white text-lg font-semibold hover:bg-blue-700 transition duration-300">
             Facebook
           </a>
-          <a href="https://youtube.com/youryoutube" target="_blank" rel="noreferrer" className="px-6 py-3 bg-red-600 rounded-lg text-white text-lg font-semibold hover:bg-red-700 transition duration-300">
+          <a href="https://youtube.com/@bugandayiyobugandayange?si=cB3nbNygItwYPfmN" target="_blank" rel="noreferrer" className="px-6 py-3 bg-red-600 rounded-lg text-white text-lg font-semibold hover:bg-red-700 transition duration-300">
             YouTube
           </a>
         </div>

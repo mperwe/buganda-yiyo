@@ -19,6 +19,7 @@ import by11 from "../assets/by11.jpeg";
 import by12 from "../assets/by12.jpeg";
 import by3 from "../assets/by3.jpeg";
 import by15 from "../assets/by15.jpeg";
+import king1 from "../assets/king1.jpeg"
 
 const Home = () => {
   const sliderSettings = {
@@ -35,10 +36,10 @@ const Home = () => {
   };
 
   const events = [
-    { title: "Buganda Culture Festival", date: "March 15, 2025", location: "Kampala", description: "A grand celebration of Buganda’s rich culture.", img: by15 },
-    { title: "Youth Empowerment Conference", date: "April 10, 2025", location: "Entebbe", description: "Empowering Buganda’s youth with skills and knowledge.", img: bug4 },
-    { title: "Business Networking Event", date: "October 9, 2025", location: "Mengo", description: "Buganda’s  Business weeke.", img: by11 },
-    { title: "Royal Heritage Gathering", date: "June 20, 2025", location: "Mawokota", description: "An exclusive gathering honoring Buganda’s traditions.", img: by3 },
+    { title: "Kabaka's Birthday Run", date: "April 6, 2025", location: "Kampala", description: "Celebrating Kabaka's 70th Birthday", img: king1 },
+    { title: "Okulambura Ssezibwa", date: "May 24, 2025", location: "Ssezibwa Falls", description: "Escape the city and immerse yourself in the beauty, culture and legend of Ssezibwa Falls.", img: by15 },
+    { title: "Bulungi Bwansi", date: "June 30, 2025", location: "Sebwana Nursery School, Busiro", description: "Bulungi Bwansi", img: by11 },
+    { title: "Bugada Yiyo Buganda Yange - Day", date: "October 3, 2025", location: "BHTB, Kampala-Kyaddondo", description: "Bugada Yiyo Buganda Yange - Day", img: by3 },
   ];
 
   return (
@@ -46,7 +47,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative w-full h-screen">
         <Slider {...sliderSettings} className="absolute top-0 left-0 w-full h-full">
-          {[flag, bg, Kabaka4, Kabaka3, bug10, bug1, bug4, bug5, by5, by8, by11, by12].map((image, index) => (
+          {[flag, bg, Kabaka4, Kabaka3, bug10, bug1, bug4, bug5, by5, by8, by11, by12, king1].map((image, index) => (
             <div key={index} className="w-full h-screen flex justify-center items-center relative">
               <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-60 p-6">

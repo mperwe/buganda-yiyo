@@ -22,10 +22,10 @@ const Footer = () => {
         <div className="text-center sm:text-left">
           <h3 className="text-2xl font-semibold mb-6">Contact Us</h3>
           <p className="flex justify-center sm:justify-start items-center gap-3 text-lg">
-            <Mail size={20} /> info@bugandayiyo.com
+            <Mail size={20} /> bugadayiyobugandayange@gmail.com.
           </p>
           <p className="flex justify-center sm:justify-start items-center gap-3 mt-4 text-lg">
-            <Phone size={20} /> +256 123 456 789
+            <Phone size={20} /> +256 759 606 006  
           </p>
         </div>
 
@@ -36,7 +36,7 @@ const Footer = () => {
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFA500] transition-colors">
               <Facebook size={28} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFA500] transition-colors">
+            <a href="https://twitter.com/i/communities/1855912401536713035" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFA500] transition-colors">
               <Twitter size={28} />
             </a>
             <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFA500] transition-colors">
