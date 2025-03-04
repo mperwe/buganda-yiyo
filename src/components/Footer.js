@@ -60,6 +60,13 @@ const Footer = () => {
           <button className="mt-4 px-6 py-3 bg-[#FFA500] text-black font-semibold rounded hover:bg-[#cc8400] transition-colors">
             Subscribe
           </button>
+
+          {/* Donation Button */}
+          <Link to="/contact">
+            <button className="mt-6 mx-4 px-6 py-3 bg-[#FF5733] text-white font-semibold rounded hover:bg-[#cc3c2e] transition-colors">
+              Donate Now
+            </button>
+          </Link>
         </div>
       </div>
 
