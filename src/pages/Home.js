@@ -6,13 +6,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { ChevronRight } from "lucide-react";
 import flag from "../assets/FLAG.png";
 import bg from "../assets/bg.jpg";
+import by20 from "../assets/by20.jpeg"
+import by21 from "../assets/by21.jpeg"
 import Kabaka4 from "../assets/Kabaka4.jpg";
-import Kabaka3 from "../assets/Kabaka3.jpg";
 import chairmanImage from "../assets/Kabaka.jpeg";
 import bug1 from "../assets/bug1.jpeg";
 import bug4 from "../assets/bug4.jpg";
 import bug5 from "../assets/bug5.jpg";
-import bug10 from "../assets/bug10.jpg";
+import bug10 from "../assets/bug10.jpeg";
 import by5 from "../assets/by5.jpeg";
 import by8 from "../assets/by8.jpeg";
 import by11 from "../assets/by11.jpeg";
@@ -47,7 +48,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative w-full h-screen">
         <Slider {...sliderSettings} className="absolute top-0 left-0 w-full h-full">
-          {[flag, bg, Kabaka4, Kabaka3, bug10, bug1, bug4, bug5, by5, by8, by11, by12, king1].map((image, index) => (
+          {[flag, bg, by21, by20, Kabaka4, bug10, bug1, bug4, bug5, by5, by8, by11, by12,].map((image, index) => (
             <div key={index} className="w-full h-screen flex justify-center items-center relative">
               <img src={image} alt={`Slide ${index + 1}`} className="w-full h-full object-cover" />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center bg-black bg-opacity-60 p-6">
@@ -88,14 +89,22 @@ const Home = () => {
       {/* Message from the King */}
       <section className="py-20 bg-gray-900 text-white text-center">
         <h2 className="text-4xl font-extrabold mb-8">OBUBAKA BWA SSAABASAJJA KABAKA </h2>
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 p-6 bg-gray-800 rounded-xl shadow-lg border-4 border-white">
-          <img src={chairmanImage} alt="Chairman" className="w-full md:w-[450px] h-[350px] object-cover rounded-lg shadow-2xl border-4 border-white" />
-          <div className="text-left">
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 p-6 bg-gray-700 rounded-xl shadow-lg border-4 border-white">
+        <img src={chairmanImage} alt="Chairman" className="w-full md:w-[700px] h-[600px] object-cover rounded-lg shadow-2xl border-4 border-white" />
+
+                    <div className="text-left">
             <p className="text-lg md:text-xl font-light leading-relaxed">
-            Enkozesa y'ebyo ebitubulirirwa mu bigambo ne mu mawulire, oba amagezi agatuwebwa ne Tekinologiya munsangi zinno byonna bikulu nnyo.  Kyokka tussaana okubikwata n'obwegendereza. Bwetubyeyambisa obulungi tusobola okufunamu enkulakulana, kyokka bwetubikozesa obubi bisobola okutuviirako obulabe n'okwenyika ffeka muddubi. 
-            Abalabe ba Buganda bangi beyambisiza nnyo emitimbagano okutyobola Ekitiibwa kya Buganda. Tufube nnyo obutabawa mwaganya kubanga waliwo ate abamu muffe ABAGANDA abaseesa mwebyo abalabe bye batambuza
+            Enkozesa y'ebyo ebitubulirirwa mu bigambo ne mu mawulire, oba amagezi agatuweebwa ne Tekinologiya mu nsangi zino byonna bikulu nnyo.  Kyokka tusaana okubikwata n'obwegendereza. Bwe tubyeyambisa obulungi tusobola okufunamu enkulaakulana, kyokka bwe tubikozesa obubi bisobola okutuviirako obulabe n'okwennyika ffeka mu ddubi.
             </p>
-            <p className="mt-4 text-lg md:text-xl font-bold">Ssabasajja Kabaka Ronald Muwenda Mutebi II</p>
+            <p className="text-lg md:text-xl font-light leading-relaxed">
+            Enkozesa y'ebyo ebitubulirirwa mu bigambo ne mu mawulire, oba amagezi agatuweebwa ne Tekinologiya mu nsangi zino byonna bikulu nnyo.  Kyokka tusaana okubikwata n'obwegendereza. Bwe tubyeyambisa obulungi tusobola okufunamu enkulaakulana, kyokka bwe tubikozesa obubi bisobola okutuviirako obulabe n'okwennyika ffeka mu ddubi.
+            </p>
+
+            <p className="text-lg md:text-xl font-light leading-relaxed">
+            Abalabe ba Buganda bangi beeyambisizza nnyo emitimbagano okutyobola ekitiibwa kya Buganda. Tufube nnyo obutabawa mwagaanya kubanga waliwo ate abamu mu ffe ABAGANDA abaseesa mwebyo abalabe bye batambuza.
+            </p>
+
+          <p className="mt-4 text-lg md:text-xl font-bold">Ssabasajja Kabaka Ronald Muwenda Mutebi II</p>
           </div>
         </div>
       </section>

@@ -3,18 +3,19 @@ import bug9 from "../assets/bug9.jpg";
 import by15 from "../assets/by15.jpeg";
 import by2 from "../assets/by2.jpeg"
 import by8 from "../assets/by8.jpeg";
-import bug4 from "../assets/bug4.jpg";
+import by12 from "../assets/by12.jpeg";
 import by3 from "../assets/by3.jpeg";
 import by11 from "../assets/by11.jpeg";
 import bug3 from "../assets/bug3.jpg";
+import by21 from "../assets/by21.jpeg"
 
 import king1 from "../assets/king1.jpeg";
 
 const events = [
-  { id: 1, title: "Kabaka's BirthDay Run", date: "April 6, 2025", description: "Join the 12th Kabaka Birthday Run on Sunday, April 6, 2025, at Lubiri, Mengo. This year's run supports the fight against HIV/AIDS.", image: king1 },
+  { id: 1, title: "Kabaka's BirthDay Run", date: "April 6, 2025", description: "Join the 12th Kabaka Birthday Run on Sunday, April 6, 2025, at Lubiri, Mengo. This year's run supports the fight against HIV/AIDS.", image: by12 },
   { id: 2, title: "Okulambula Ssezibwa", date: "May 24, 2025", description: "Ditch the city chaos and dive into the magic of Ssezibwa Falls! Experience the rich Buganda heritage, breathtaking waterfalls, and cultural storytelling.", image: by15 },
   { id: 3, title: "Bulungi Bwansi", date: "June 30, 2025", description: "Join Buganda Yiyo Buganda Yange as we provide affordable education, clean water, and community empowerment projects to improve our kingdom.", image: by2 },
-  { id: 4, title: "Buganda Yiyo Buganda Yange Day", date: "October 3, 2025", description: "A dynamic gathering for BYBY patriots to learn, connect, and share strategies for the continued development of Buganda and its people.", image: bug4 },
+  { id: 4, title: "Buganda Yiyo Buganda Yange Day", date: "October 3, 2025", description: "A dynamic gathering for BYBY patriots to learn, connect, and share strategies for the continued development of Buganda and its people.", image: by21 },
   { id: 5, title: "Oluwalo lwaffe 2025", date: "November, 2025", description: "Oluwalo lwaffe 2025, a moment to contribute towards the cultural and economic empowerment of Buganda through collective efforts.", image: by8 },
   { id: 6, title: "Olukiiko lwa KANSO (AGM)", date: "December, 2025", description: "Annual General Meeting for KANSO, a crucial event where key decisions on Buganda development, culture, and governance are made.", image: bug3 },
   { id: 7, title: "Buganda Youth Day", date: "December, 2025", description: "Buganda Youth Day celebrations, a platform to empower, educate, and engage the youth in the progress of Buganda’s future.", image: by11 },
@@ -63,16 +64,16 @@ const Events = () => {
         <h2 className="text-4xl font-bold mb-8 text-gray-800">What People Are Saying</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-gray-800">
-            <p className="italic">"The Youth Summit was life-changing! Learned a lot and met great people."</p>
-            <p className="font-semibold mt-4 text-gray-800">- John Doe</p>
+            <p className="italic">"Buganda Yiyo, Buganda Yanga is a great initiative to unite Baganda in preserving and celebrating our rich culture and heritage."</p>
+            <p className="font-semibold mt-4 text-gray-800">- Nalugwa Lilian</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-gray-800">
-            <p className="italic">"The cultural exchange expanded my perspective. I loved the experience!"</p>
-            <p className="font-semibold mt-4 text-gray-800">- Jane Smith</p>
+            <p className="italic">"This association will strengthen our identity, values, and traditions, especially for those in the diaspora."</p>
+            <p className="font-semibold mt-4 text-gray-800">- Ssentongo Micheal</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-gray-800">
-            <p className="italic">"The Tech Expo introduced me to amazing innovations!"</p>
-            <p className="font-semibold mt-4 text-gray-800">- Alex Mwangi</p>
+            <p className="italic">"A brilliant way to pass down Buganda’s customs to future generations while fostering unity among Baganda worldwide."</p>
+            <p className="font-semibold mt-4 text-gray-800">- Frank Kyambadde</p>
           </div>
         </div>
       </section>
