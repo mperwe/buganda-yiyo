@@ -9,7 +9,7 @@ import by11 from "../assets/by11.jpeg";
 import bug3 from "../assets/bug3.jpg";
 import by21 from "../assets/by21.jpeg"
 
-import king1 from "../assets/king1.jpeg";
+
 
 const events = [
   { id: 1, title: "Kabaka's BirthDay Run", date: "April 6, 2025", description: "Join the 12th Kabaka Birthday Run on Sunday, April 6, 2025, at Lubiri, Mengo. This year's run supports the fight against HIV/AIDS.", image: by12 },
