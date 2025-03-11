@@ -61,12 +61,14 @@ const Footer = () => {
             Subscribe
           </button>
 
-          {/* Donation Button */}
-          <Link to="/contact">
-            <button className="mt-4 w-full px-6 py-3 bg-[#FF5733] text-white font-semibold rounded hover:bg-[#cc3c2e] transition-colors">
-              Donate Now
-            </button>
-          </Link>
+          {/* Donation Button - FIXED FOR RESPONSIVENESS */}
+          <div className="mt-4 flex justify-center sm:justify-start">
+            <Link to="/contact">
+              <button className="px-6 py-3 bg-[#FF5733] text-white font-semibold rounded hover:bg-[#cc3c2e] transition-colors w-full sm:w-auto">
+                Donate Now
+              </button>
+            </Link>
+          </div>
         </div>
       </div>
 
