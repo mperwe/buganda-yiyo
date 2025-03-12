@@ -40,7 +40,7 @@ const Home = () => {
     { title: "Kabaka's Birthday Run", date: "April 6, 2025", location: "Kampala", description: "Celebrating Kabaka's 70th Birthday", img: king1 },
     { title: "Okulambura Ssezibwa", date: "May 24, 2025", location: "Ssezibwa Falls", description: "Escape the city and immerse yourself in the beauty, culture and legend of Ssezibwa Falls.", img: by15 },
     { title: "Bulungi Bwansi", date: "June 30, 2025", location: "Sebwana Nursery School, Busiro", description: "Bulungi Bwansi", img: by11 },
-    { title: "Bugada Yiyo Buganda Yange - Day", date: "October 3, 2025", location: "BHTB, Kampala-Kyaddondo", description: "Bugada Yiyo Buganda Yange - Day", img: by3 },
+    { title: "Bugada Yiyo Buganda Yange - Day", date: "October 5, 2025", location: "BHTB, Kampala-Kyaddondo", description: "Bugada Yiyo Buganda Yange - Day", img: by3 },
   ];
 
   return (

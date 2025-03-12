@@ -15,8 +15,8 @@ const leaders = [
   { name: "Namukangula Keith", position: "Member", image: "keith.jpg" },
   { name: "Lunanika Sharif", position: "Embabulungi / Welfare", image: "welfare.jpeg" },
   { name: "Simon Ssenkayi", position: "Omuwabuzi", image: "advisor.jpeg" },
-  { name: "Namulwana H Victoria", position: "Eby'obulambuzi n'Okwewumuzamu", image: "hospitality.jpeg" },
-  { name: "Galiwango B Musota", position: "Member", image: "bemba.jpg" },
+  { name: "Namulwana Hilda V.", position: "Eby'obulambuzi n'Okwewumuzamu", image: "hospitality.jpeg" },
+  { name: "Galiwango B Musota", position: "Amyuka ow'ebyobulambuzi n'Okwewumuzamu", image: "bemba.jpg" },
   { name: "Kalema Abubakar Kasumba", position: "Member", image: "kasumba.jpg" },
   { name: "Ssebunya Hamzah", position: "Member", image: "hamza.jpeg" },
 ];
