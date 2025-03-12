@@ -22,7 +22,7 @@ const Footer = () => {
         <div>
           <h3 className="text-2xl font-semibold mb-6">Contact Us</h3>
           <p className="flex items-center justify-center sm:justify-start gap-3 text-lg">
-            <Mail size={20} /> bugadayiyobugandayange@gmail.com
+            <Mail size={20} /> bugandayiyobugandayange@gmail.com
           </p>
           <p className="flex items-center justify-center sm:justify-start gap-3 mt-4 text-lg">
             <Phone size={20} /> +256 759 606 006

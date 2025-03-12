@@ -16,8 +16,8 @@ const events = [
   { id: 2, title: "Okulambula Ssezibwa", date: "May 24, 2025", description: "Ditch the city chaos and dive into the magic of Ssezibwa Falls! Experience the rich Buganda heritage, breathtaking waterfalls, and cultural storytelling.", image: by15 },
   { id: 3, title: "Bulungi Bwansi", date: "June 30, 2025", description: "Join Buganda Yiyo Buganda Yange as we provide affordable education, clean water, and community empowerment projects to improve our kingdom.", image: by2 },
   { id: 4, title: "Buganda Yiyo Buganda Yange Day", date: "October 3, 2025", description: "A dynamic gathering for BYBY patriots to learn, connect, and share strategies for the continued development of Buganda and its people.", image: by21 },
-  { id: 5, title: "Oluwalo lwaffe 2025", date: "November, 2025", description: "Oluwalo lwaffe 2025, a moment to contribute towards the cultural and economic empowerment of Buganda through collective efforts.", image: by8 },
-  { id: 6, title: "Olukiiko lwa KANSO (AGM)", date: "December, 2025", description: "Annual General Meeting for KANSO, a crucial event where key decisions on Buganda development, culture, and governance are made.", image: bug3 },
+  { id: 5, title: "Oluwalo lwaffe 2025", date: "August, 2025", description: "Oluwalo lwaffe 2025, a moment to contribute towards the cultural and economic empowerment of Buganda through collective efforts.", image: by8 },
+  { id: 6, title: "Olukiiko lwa KANSO (AGM)", date: "August 21, 2025", description: "Annual General Meeting for KANSO, a crucial event where key decisions on Buganda development, culture, and governance are made.", image: bug3 },
   { id: 7, title: "Buganda Youth Day", date: "December, 2025", description: "Buganda Youth Day celebrations, a platform to empower, educate, and engage the youth in the progress of Buganda’s future.", image: by11 },
   { id: 8, title: "End of Year Celebration", date: "December, 2025", description: "End-of-year gathering and celebration for the Buganda community, featuring cultural performances, speeches, and a reflection on the year's achievements.", image: by3 },
 ];
