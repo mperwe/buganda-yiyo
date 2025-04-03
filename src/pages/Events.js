@@ -13,7 +13,7 @@ import by21 from "../assets/by21.jpeg"
 
 const events = [
   { id: 1, title: "Kabaka's BirthDay Run", date: "April 6, 2025", description: "Join the 12th Kabaka Birthday Run on Sunday, April 6, 2025, at Lubiri, Mengo. This year's run supports the fight against HIV/AIDS.", image: by12 },
-  { id: 2, title: "Okulambula Ssezibwa", date: "May 24, 2025", description: "Ditch the city chaos and dive into the magic of Ssezibwa Falls! Experience the rich Buganda heritage, breathtaking waterfalls, and cultural storytelling.", image: by15 },
+  { id: 2, title: "Okulambula Ssezibwa", date: "May 17, 2025", description: "Ditch the city chaos and dive into the magic of Ssezibwa Falls! Experience the rich Buganda heritage, breathtaking waterfalls, and cultural storytelling.", image: by15 },
   { id: 3, title: "Bulungi Bwansi", date: "June 30, 2025", description: "Join Buganda Yiyo Buganda Yange as we provide affordable education, clean water, and community empowerment projects to improve our kingdom.", image: by2 },
   { id: 4, title: "Buganda Yiyo Buganda Yange Day", date: "October 3, 2025", description: "A dynamic gathering for BYBY patriots to learn, connect, and share strategies for the continued development of Buganda and its people.", image: by21 },
   { id: 5, title: "Oluwalo lwaffe 2025", date: "August, 2025", description: "Oluwalo lwaffe 2025, a moment to contribute towards the cultural and economic empowerment of Buganda through collective efforts.", image: by8 },
