@@ -56,6 +56,12 @@ export default function Navbar() {
               Contact
             </Link>
           </li>
+
+            <li>
+            <Link to="/blog" className="hover:text-yellow-500 transition-all duration-200">
+              Blog
+            </Link>
+          </li>
         </ul>
 
       {/* Register Button */}
