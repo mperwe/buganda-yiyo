@@ -66,7 +66,7 @@ export default function Navbar() {
 
       {/* Register Button */}
         <a
-          href="https://docs.google.com/forms/d/1kJYYtbwk2QrnKqmLkeXnmwZ7bNgah6xXWkR1OToCcGA/edit#settings"
+          href="https://test.unseen.africa/"
           target="_blank"
           rel="noopener noreferrer"
         className="hidden md:block bg-yellow-500 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-all"
