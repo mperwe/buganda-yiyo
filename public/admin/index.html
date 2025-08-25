@@ -4,6 +4,14 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Content Manager</title>
+
+    <!-- Redirect invite links to /admin with token -->
+    <script>
+      const urlHash = window.location.hash;
+      if (urlHash.includes('invite_token')) {
+        window.location.replace(`/admin/${urlHash}`);
+      }
+    </script>
   </head>
   <body>
     <!-- Load Decap CMS -->
