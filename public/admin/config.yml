@@ -1,6 +1,5 @@
 backend:
-  name: github
-  repo: your-username/your-repo   # 👉 replace with your GitHub repo
+  name: git-gateway
   branch: main                    # or master
 
 media_folder: "static/uploads"    # images stored in repo
