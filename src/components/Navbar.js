@@ -66,7 +66,7 @@ export default function Navbar() {
 
       {/* Register Button */}
         <a
-          href="https://test.unseen.africa/"
+          href="https://byby.esteem.africa/"
           target="_blank"
           rel="noopener noreferrer"
         className="hidden md:block bg-yellow-500 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-all"
